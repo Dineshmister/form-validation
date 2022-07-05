@@ -1,0 +1,55 @@
+:root{
+    --bgclr:#f7f8fa;
+    --card-clr:#ffffff;
+    --btn-clr:#f04037;
+}
+h1{
+    text-transform: capitalize;
+}
+body{
+    background-color: var(--bgclr);
+    position: relative;
+}
+.omega{
+    text-transform: capitalize;
+}
+.card{
+    width: 360px;
+}
+.parent{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+
+}
+.input::placeholder{
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+label {
+    text-transform: capitalize;
+    margin: 10px 0;
+
+}
+button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--btn-clr);
+    color: var(--card-clr);
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+.error{
+    color: #f04037;
+}

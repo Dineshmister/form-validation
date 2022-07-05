@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" id="form">
+
+        <h6 class="omega text-center">omega</h6>
+        <div class="parent">
+            <div class="card shadow-lg p-4">
+                <h1 class="text-center fw-bold">sign up</h1>
+                <div class="form-text text-center mb-2" style="text-transform: capitalize">no credit card required</div>
+                <input type="email" name="" id="email" placeholder="email address" class="my-2 input">
+                <span class="error" id="err"></span>
+                <input type="text" name="" id="company" placeholder="company name" class="my-2 input">
+                <span class="error" id="err1"></span>
+                <input type="password" name="" id="pass" placeholder="password" class="my-2 input">
+                <span class="error" id="err2"></span>
+                <div class="control d-flex">
+                    <input type="checkbox" name="" id="check" class="mx-1">
+                    <label for="check">i agree to the <a href="#" style="text-decoration:none">terms and conditions</a>
+                    </label>
+
+
+                </div>
+                <button type="submit" onclick="g()">Get started</button>
+                <div class="form-text text-center">already have an account <a href="#" style="text-decoration:none">sign
+                        in</a></div>
+
+
+            </div>
+
+        </div>
+
+    </form>
+    <script>
+        function g(){
+            const x = document.getElementById("company")
+            const y = document.getElementById("email")
+            const z = document.getElementById("pass")
+            // console.log(x.value)
+        
+            if (x.value === ""){
+                console.log("kl")
+                document.getElementById("err1").innerText = "provide a valid company name"
+            }
+            if (y.value === "" ){
+                document.getElementById("err").innerText = "provide a valid email"
+
+            }
+            if (z.value === ""){
+                document.getElementById("err2").innerText = "please provide a valid passsword"
+            }
+
+        }
+    </script>
+    
+    
+</body>
+
+</html>
